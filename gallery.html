@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Gallery — 2047 Technologies</title>
+  <title>Gallery - 2047 Technologies</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -13,6 +13,10 @@
       <img src="assets/logo.svg" alt="2047 Technologies logo" />
       <span>2047 <strong>Technologies</strong></span>
     </a>
+
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
 
     <nav class="nav" aria-label="Primary navigation">
       <a href="index.html">Home</a>
@@ -29,39 +33,54 @@
     <section class="section gallery" id="projects">
       <div class="section-heading">
         <p class="eyebrow">Work samples</p>
-        <h2>Selected projects and case studies</h2>
-        <p class="section-intro">A small selection of websites, systems, and dashboards we've built or prototyped. Click any item for details.</p>
+        <h2>Selected project gallery</h2>
+        <p class="section-intro">A quick look at recent web, mobile, e-commerce, school, portfolio, and landing page work from 2047 Technologies.</p>
       </div>
 
       <div class="gallery-grid">
-        <article class="gallery-item">
-          <a href="#" class="gallery-link">
-            <img src="assets/gallery/project1.svg" alt="Project 1 — School Website" />
-            <div class="gallery-caption">
-              <h3>School Website</h3>
-              <p>Admissions, notices, and events site with admin-managed content.</p>
-            </div>
-          </a>
+        <article class="gallery-item reveal">
+          <img class="gallery-shot screen-shot" src="assets/gallery/agriculture-marketplace.png" alt="Agriculture marketplace homepage screenshot" />
+          <div class="gallery-caption">
+            <span class="project-type">Marketplace</span>
+            <h3>Agriculture Platform</h3>
+            <p>A marketplace experience connecting farmers, buyers, and transporters with clear navigation and strong calls to action.</p>
+          </div>
         </article>
 
-        <article class="gallery-item">
-          <a href="#" class="gallery-link">
-            <img src="assets/gallery/project2.svg" alt="Project 2 — Inventory System" />
-            <div class="gallery-caption">
-              <h3>Inventory System</h3>
-              <p>Stock management with simple roles, approvals, and reporting.</p>
-            </div>
-          </a>
+        <article class="gallery-item reveal delay-1">
+          <img class="gallery-shot contain-shot" src="assets/gallery/driver-dashboard.svg" alt="Driver dashboard mobile screenshot preview" />
+          <div class="gallery-caption">
+            <span class="project-type">Automotive</span>
+            <h3>Driver Dashboard</h3>
+            <p>A mobile-first operations view for assigned trips, driver availability, safety tools, and quick trip actions.</p>
+          </div>
         </article>
 
-        <article class="gallery-item">
-          <a href="#" class="gallery-link">
-            <img src="assets/gallery/project3.svg" alt="Project 3 — Dashboard" />
-            <div class="gallery-caption">
-              <h3>Data Dashboard</h3>
-              <p>Interactive charts and exports for operational decision-making.</p>
-            </div>
-          </a>
+        <article class="gallery-item reveal delay-2">
+          <img class="gallery-shot screen-shot" src="assets/gallery/ecommerce-platform.png" alt="E-commerce platform screenshot" />
+          <div class="gallery-caption">
+            <span class="project-type">Online store</span>
+            <h3>E-Commerce Platform</h3>
+            <p>A shopping platform pattern for product discovery, cart management, checkout, quotes, and admin-managed stock.</p>
+          </div>
+        </article>
+
+        <article class="gallery-item reveal">
+          <img class="gallery-shot screen-shot" src="assets/gallery/school-website.png" alt="School website screenshot" />
+          <div class="gallery-caption">
+            <span class="project-type">Education</span>
+            <h3>School Website</h3>
+            <p>A school-facing platform for admissions, notices, departments, galleries, downloads, and structured communication.</p>
+          </div>
+        </article>
+
+        <article class="gallery-item reveal delay-1">
+          <img class="gallery-shot screen-shot" src="assets/gallery/portfolio-landing-page.png" alt="Portfolio landing page screenshot" />
+          <div class="gallery-caption">
+            <span class="project-type">Landing page</span>
+            <h3>Portfolio / Landing Page</h3>
+            <p>A personal brand and landing-page layout with strong hero content, project navigation, social links, and contact actions.</p>
+          </div>
         </article>
       </div>
     </section>
@@ -73,8 +92,9 @@
       <span>2047 <strong>Technologies</strong></span>
     </a>
     <p>Websites, custom systems, data tools, IT support, and workflow automation.</p>
-    <p class="copyright">© <span id="year">2026</span> 2047 Technologies. All rights reserved.</p>
+    <p class="copyright">&copy; <span id="year"></span> 2047 Technologies. All rights reserved.</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>

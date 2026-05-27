@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">Driver dashboard preview</title>
+  <desc id="desc">A mobile driver dashboard interface with trip status, safety tools, and driver command cards.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#07101f"/>
+      <stop offset="1" stop-color="#1b4960"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#07101f"/>
+      <stop offset="1" stop-color="#132033"/>
+    </linearGradient>
+    <linearGradient id="tile" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#06b6d4"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#02040a" flood-opacity="0.38"/>
+    </filter>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <circle cx="116" cy="92" r="124" fill="#00f5ff" opacity="0.09"/>
+  <circle cx="690" cy="406" r="148" fill="#31ff9b" opacity="0.08"/>
+  <g filter="url(#shadow)">
+    <rect x="276" y="28" width="248" height="444" rx="34" fill="#edf2f8"/>
+    <rect x="276" y="28" width="248" height="60" rx="34" fill="#0b1324"/>
+    <rect x="276" y="62" width="248" height="30" fill="#0b1324"/>
+    <rect x="305" y="49" width="22" height="3" rx="1.5" fill="#edf2f8"/>
+    <text x="344" y="62" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#f8fafc">Driver dashboard</text>
+    <circle cx="477" cy="56" r="8" fill="none" stroke="#f8fafc" stroke-width="3"/>
+    <text x="296" y="122" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="800" fill="#0a1220">Welcome, Farai</text>
+    <rect x="296" y="137" width="62" height="24" rx="12" fill="#dcfce7"/>
+    <text x="310" y="153" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="800" fill="#166534">Available</text>
+    <text x="370" y="154" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#334155">2 trips - 5.00 rating</text>
+    <rect x="296" y="176" width="208" height="168" rx="11" fill="url(#card)"/>
+    <text x="318" y="214" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="800" fill="#ffffff">Drive command</text>
+    <text x="318" y="244" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#cbd5e1">Assigned trips, safety tools,</text>
+    <text x="318" y="266" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#cbd5e1">chat, and live GPS are ready.</text>
+    <rect x="428" y="194" width="60" height="66" rx="8" fill="url(#tile)" transform="rotate(-5 458 227)"/>
+    <g transform="rotate(-5 458 227)" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M443 231 L449 214 H468 L474 231"/>
+      <rect x="438" y="229" width="42" height="18" rx="7"/>
+      <circle cx="449" cy="248" r="3" fill="#ffffff"/>
+      <circle cx="469" cy="248" r="3" fill="#ffffff"/>
+    </g>
+    <rect x="318" y="286" width="80" height="38" rx="7" fill="#1f2937" stroke="#334155"/>
+    <text x="328" y="303" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#cbd5e1">Now</text>
+    <text x="328" y="319" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="800" fill="#ffffff">0 active</text>
+    <rect x="407" y="286" width="78" height="38" rx="7" fill="#1f2937" stroke="#334155"/>
+    <text x="417" y="303" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#cbd5e1">Next</text>
+    <text x="417" y="319" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="800" fill="#ffffff">5.0 rating</text>
+    <rect x="318" y="342" width="82" height="28" rx="14" fill="#ffffff"/>
+    <text x="341" y="361" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="800" fill="#1f2937">Open trips</text>
+    <rect x="296" y="360" width="94" height="55" rx="8" fill="#ffffff"/>
+    <rect x="410" y="360" width="94" height="55" rx="8" fill="#ffffff"/>
+    <text x="333" y="392" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="800" fill="#0f172a">Trips</text>
+    <text x="449" y="392" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="800" fill="#0f172a">Safety</text>
+    <rect x="296" y="432" width="208" height="28" rx="14" fill="#0b1324"/>
+    <text x="363" y="451" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="800" fill="#ffffff">View assigned trips</text>
+  </g>
+</svg>

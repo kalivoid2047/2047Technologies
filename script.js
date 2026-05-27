@@ -1,6 +1,7 @@
 const menuToggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.nav');
 const navLinks = document.querySelectorAll('.nav a');
+const sectionNavLinks = Array.from(navLinks).filter((link) => link.getAttribute('href')?.startsWith('#'));
 const sections = document.querySelectorAll('main section[id]');
 const year = document.querySelector('#year');
 
@@ -28,17 +29,19 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.reveal').forEach((item) => observer.observe(item));
 
-const sectionObserver = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (!entry.isIntersecting) return;
-    const id = entry.target.getAttribute('id');
-    navLinks.forEach((link) => {
-      link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
+if (sectionNavLinks.length) {
+  const sectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      const id = entry.target.getAttribute('id');
+      sectionNavLinks.forEach((link) => {
+        link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
+      });
     });
-  });
-}, { rootMargin: '-45% 0px -45% 0px' });
+  }, { rootMargin: '-45% 0px -45% 0px' });
 
-sections.forEach((section) => sectionObserver.observe(section));
+  sections.forEach((section) => sectionObserver.observe(section));
+}
 
 const form = document.querySelector('.quote-form');
 form?.addEventListener('submit', () => {
