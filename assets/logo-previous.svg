@@ -1,0 +1,40 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">2047 Technologies Logo</title>
+  <desc id="desc">A futuristic 2047 monogram with circuit paths and an orbital ring.</desc>
+  <defs>
+    <linearGradient id="g1" x1="84" y1="80" x2="430" y2="436" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00F5FF"/>
+      <stop offset="0.45" stop-color="#31FF9B"/>
+      <stop offset="1" stop-color="#7C5CFF"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="136" y1="118" x2="386" y2="394" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#A7FFF0"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="118" fill="#050816"/>
+  <circle cx="256" cy="256" r="178" stroke="url(#g1)" stroke-width="10" opacity="0.24"/>
+  <path d="M84 268C130 146 292 84 424 149" stroke="url(#g1)" stroke-width="8" stroke-linecap="round" opacity="0.9"/>
+  <path d="M428 244C378 373 207 430 86 356" stroke="url(#g1)" stroke-width="8" stroke-linecap="round" opacity="0.9"/>
+  <circle cx="424" cy="149" r="14" fill="#31FF9B" filter="url(#glow)"/>
+  <circle cx="86" cy="356" r="14" fill="#00F5FF" filter="url(#glow)"/>
+  <path d="M142 184H220C239 184 254 199 254 218V224C254 242 240 257 222 257H184C170 257 158 269 158 283V291H254V328H118V292C118 251 149 220 190 220H218V218H142V184Z" fill="url(#g2)"/>
+  <path d="M282 184H388V328H348V293H282V184ZM321 221V256H348V221H321Z" fill="url(#g2)"/>
+  <path d="M118 356H170V384H118V356ZM203 356H394V384H203V356Z" fill="url(#g1)" opacity="0.86"/>
+  <path d="M168 132V104H256V132M256 132V162M344 132V104H396" stroke="url(#g1)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0.78"/>
+  <circle cx="168" cy="104" r="8" fill="#00F5FF"/>
+  <circle cx="396" cy="104" r="8" fill="#31FF9B"/>
+  <path d="M159 408V438H252V408M352 408V438H396" stroke="url(#g1)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0.72"/>
+  <circle cx="159" cy="438" r="8" fill="#7C5CFF"/>
+  <circle cx="396" cy="438" r="8" fill="#31FF9B"/>
+</svg>

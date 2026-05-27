@@ -1,0 +1,114 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">2047 Technologies modern logo</title>
+  <desc id="desc">A modern cybernetic 2047 monogram inside a luminous hexagonal circuit mark.</desc>
+  <defs>
+    <linearGradient id="bg" x1="72" y1="38" x2="454" y2="476" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#08152C"/>
+      <stop offset="0.52" stop-color="#050816"/>
+      <stop offset="1" stop-color="#03040B"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(254 236) rotate(90) scale(242)">
+      <stop stop-color="#00F5FF" stop-opacity="0.30"/>
+      <stop offset="0.42" stop-color="#31FF9B" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#7C5CFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="neon" x1="86" y1="86" x2="426" y2="426" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00F5FF"/>
+      <stop offset="0.47" stop-color="#31FF9B"/>
+      <stop offset="1" stop-color="#8B5CFF"/>
+    </linearGradient>
+    <linearGradient id="digit" x1="104" y1="176" x2="408" y2="304" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EFFFFF"/>
+      <stop offset="0.35" stop-color="#82FFF1"/>
+      <stop offset="0.68" stop-color="#31FF9B"/>
+      <stop offset="1" stop-color="#00D9FF"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="90" y1="151" x2="434" y2="368" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity="0.16"/>
+      <stop offset="0.52" stop-color="#FFFFFF" stop-opacity="0.055"/>
+      <stop offset="1" stop-color="#00F5FF" stop-opacity="0.10"/>
+    </linearGradient>
+    <filter id="glow" x="-55%" y="-55%" width="210%" height="210%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0  0 0 0 0 0.96  0 0 0 0 1  0 0 0 .82 0" result="cyanBlur"/>
+      <feMerge>
+        <feMergeNode in="cyanBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000000" flood-opacity="0.38"/>
+    </filter>
+    <pattern id="microgrid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M42 0H0V42" stroke="#FFFFFF" stroke-opacity="0.045" stroke-width="1"/>
+      <circle cx="0" cy="0" r="1.4" fill="#00F5FF" fill-opacity="0.18"/>
+    </pattern>
+    <style>
+      .pin{stroke:url(#neon);stroke-width:5;stroke-linecap:round;opacity:.72}
+      .ghost{stroke:#FFFFFF;stroke-opacity:.12;stroke-width:2}
+      .segment{fill:url(#digit);filter:url(#glow)}
+      .node{fill:#31FF9B;filter:url(#glow)}
+    </style>
+  </defs>
+
+  <rect width="512" height="512" rx="108" fill="url(#bg)"/>
+  <rect x="10" y="10" width="492" height="492" rx="99" stroke="url(#neon)" stroke-opacity="0.34" stroke-width="2"/>
+  <rect width="512" height="512" rx="108" fill="url(#halo)"/>
+  <rect width="512" height="512" rx="108" fill="url(#microgrid)" opacity="0.9"/>
+
+  <ellipse cx="256" cy="256" rx="204" ry="106" transform="rotate(-25 256 256)" stroke="url(#neon)" stroke-width="5" stroke-linecap="round" stroke-dasharray="108 34" opacity="0.54"/>
+  <ellipse cx="256" cy="256" rx="160" ry="214" transform="rotate(22 256 256)" stroke="url(#neon)" stroke-width="3" stroke-linecap="round" stroke-dasharray="80 48" opacity="0.28"/>
+
+  <path d="M256 55L416 147V331L256 457L96 331V147L256 55Z" stroke="url(#neon)" stroke-width="7" stroke-linejoin="round" opacity="0.68"/>
+  <path d="M256 80L393 160V318L256 426L119 318V160L256 80Z" class="ghost"/>
+  <circle cx="256" cy="55" r="7" class="node"/>
+  <circle cx="416" cy="147" r="7" fill="#00F5FF" filter="url(#glow)"/>
+  <circle cx="96" cy="331" r="7" fill="#8B5CFF" filter="url(#glow)"/>
+  <circle cx="256" cy="457" r="7" fill="#31FF9B" filter="url(#glow)"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="74" y="150" width="364" height="214" rx="42" fill="url(#glass)" stroke="url(#neon)" stroke-opacity="0.68" stroke-width="2.5"/>
+    <rect x="91" y="167" width="330" height="180" rx="30" stroke="#FFFFFF" stroke-opacity="0.10" stroke-width="1.5"/>
+  </g>
+
+  <path d="M118 150V121H171M394 150V121H343M118 364V395H171M394 364V395H343" class="pin"/>
+  <path d="M74 217H46M74 256H36M74 295H46M438 217H466M438 256H476M438 295H466" class="pin"/>
+  <circle cx="171" cy="121" r="5.5" fill="#00F5FF" filter="url(#glow)"/>
+  <circle cx="343" cy="121" r="5.5" fill="#31FF9B" filter="url(#glow)"/>
+  <circle cx="171" cy="395" r="5.5" fill="#8B5CFF" filter="url(#glow)"/>
+  <circle cx="343" cy="395" r="5.5" fill="#00F5FF" filter="url(#glow)"/>
+
+  <!-- Seven-segment 2047 monogram -->
+  <g aria-hidden="true">
+    <!-- 2 -->
+    <rect class="segment" x="106" y="195" width="44" height="13" rx="6.5"/>
+    <rect class="segment" x="151" y="209" width="13" height="39" rx="6.5"/>
+    <rect class="segment" x="106" y="249" width="44" height="13" rx="6.5"/>
+    <rect class="segment" x="92" y="263" width="13" height="39" rx="6.5"/>
+    <rect class="segment" x="106" y="303" width="44" height="13" rx="6.5"/>
+
+    <!-- 0 -->
+    <rect class="segment" x="188" y="195" width="44" height="13" rx="6.5"/>
+    <rect class="segment" x="174" y="209" width="13" height="39" rx="6.5"/>
+    <rect class="segment" x="233" y="209" width="13" height="39" rx="6.5"/>
+    <rect class="segment" x="174" y="263" width="13" height="39" rx="6.5"/>
+    <rect class="segment" x="233" y="263" width="13" height="39" rx="6.5"/>
+    <rect class="segment" x="188" y="303" width="44" height="13" rx="6.5"/>
+
+    <!-- 4 -->
+    <rect class="segment" x="256" y="209" width="13" height="39" rx="6.5"/>
+    <rect class="segment" x="315" y="209" width="13" height="39" rx="6.5"/>
+    <rect class="segment" x="270" y="249" width="44" height="13" rx="6.5"/>
+    <rect class="segment" x="315" y="263" width="13" height="39" rx="6.5"/>
+
+    <!-- 7 -->
+    <rect class="segment" x="352" y="195" width="44" height="13" rx="6.5"/>
+    <rect class="segment" x="397" y="209" width="13" height="39" rx="6.5"/>
+    <rect class="segment" x="397" y="263" width="13" height="39" rx="6.5"/>
+  </g>
+
+  <path d="M104 336H408" stroke="url(#neon)" stroke-width="3" stroke-linecap="round" opacity="0.62"/>
+  <text x="256" y="348" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800" letter-spacing="5.5" fill="#DDFBFF">TECHNOLOGIES</text>
+  <path d="M206 381H306" stroke="url(#neon)" stroke-width="5" stroke-linecap="round" opacity="0.72"/>
+  <circle cx="256" cy="381" r="4" fill="#31FF9B" filter="url(#glow)"/>
+</svg>
